@@ -1,0 +1,38 @@
+项目源码说明:
+
+第三方库使用如下:
+网络库 "AFNetworking", "~> 2.6.0"
+等待view "MBProgressHUD", "~> 0.9.1"
+上下拉刷新 'MJRefresh', '~> 2.4.10'
+弹框 'LGAlertView', '~> 1.0.3'
+zip解压缩 'ZipArchive'
+自动布局 'Masonry'
+sqlite数据库 'FMDB'
+
+文件夹Controller:
+1.MainWebViewController       首页,用于显示html
+2.UserInfoViewController      用户详情
+3.MapDataViewController       数据选择列表
+4.DownLoadViewController      数据下载列表
+
+文件夹Model:
+主要提供数据结构定义和数据缓存功能
+MapData:地图的数据结构
+CacheStore:数据缓存
+DataManager:数据库的创建和读取
+ZipManager:zip包的管理,下载和解压
+
+文件夹View:
+主要用于自定义View
+用户页头像和首页下部的view
+
+文件夹Network:
+主要用于网络类,此处用于封装了afnetworking接口用于下载zip包
+
+文件夹Extend和Tool:
+主要用于扩展类,扩展系统类的功能,实现更丰富的接口和功能
+包含jsonkit解析 base64加密 其他
+
+文件夹Image: 存储工程使用的图片
+
+工程目录下mainmap.zip,用于初始状态解压缩到沙盒目录使用
