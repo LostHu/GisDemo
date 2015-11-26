@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2880701BDBBB9D00782772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B28806F1BDBBB9D00782772 /* main.m */; };
+		0B2880731BDBBB9D00782772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880721BDBBB9D00782772 /* AppDelegate.m */; };
+		0B2880761BDBBB9E00782772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880751BDBBB9E00782772 /* ViewController.m */; };
+		0B28807B1BDBBB9E00782772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B28807A1BDBBB9E00782772 /* Images.xcassets */; };
+		0B28808A1BDBBB9E00782772 /* GIS_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880891BDBBB9E00782772 /* GIS_DEMOTests.m */; };
+		0B28809E1BDBBC3900782772 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880941BDBBC3900782772 /* DataManager.m */; };
+		0B28809F1BDBBC3900782772 /* MainWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880961BDBBC3900782772 /* MainWebViewController.m */; };
+		0B2880A11BDBBC3900782772 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880991BDBBC3900782772 /* MapData.m */; };
+		0B2880A21BDBBC3900782772 /* MapDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B28809B1BDBBC3900782772 /* MapDataViewController.m */; };
+		0B2880A71BDBCA6900782772 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880A61BDBCA6900782772 /* UIColor+Extend.m */; };
+		0B2880AA1BDBCD4400782772 /* UINavigationBar+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880A91BDBCD4400782772 /* UINavigationBar+Extend.m */; };
+		0B2880AD1BDCFC2300782772 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880AC1BDCFC2300782772 /* UserInfoViewController.m */; };
+		0B2880B01BDD004600782772 /* PersonalInfoAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2880AF1BDD004600782772 /* PersonalInfoAvatarCell.m */; };
+		0B6ED7991C02B980003B90B0 /* mainmap.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0B6ED7981C02B980003B90B0 /* mainmap.zip */; };
+		0B6ED79C1C02B9BD003B90B0 /* ZipManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED79B1C02B9BD003B90B0 /* ZipManager.mm */; };
+		0B6ED79E1C02F612003B90B0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6ED79D1C02F612003B90B0 /* libz.dylib */; };
+		0B6ED7B11C031DFF003B90B0 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7AE1C031DFF003B90B0 /* HttpClient.m */; };
+		0B6ED7B21C031DFF003B90B0 /* WishProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7B01C031DFF003B90B0 /* WishProtocol.m */; };
+		0B6ED7C71C032013003B90B0 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7B71C032013003B90B0 /* NSString+Extend.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0B6ED7C81C032013003B90B0 /* TapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7B91C032013003B90B0 /* TapDetectingImageView.m */; };
+		0B6ED7C91C032013003B90B0 /* UIAttributeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7BB1C032013003B90B0 /* UIAttributeItem.m */; };
+		0B6ED7CA1C032013003B90B0 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7BD1C032013003B90B0 /* UIColor+Extend.m */; };
+		0B6ED7CB1C032013003B90B0 /* UIFont+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7BF1C032013003B90B0 /* UIFont+Extend.m */; };
+		0B6ED7CC1C032013003B90B0 /* UILabel+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7C11C032013003B90B0 /* UILabel+Extend.m */; };
+		0B6ED7CD1C032013003B90B0 /* UINavigationBar+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7C31C032013003B90B0 /* UINavigationBar+Extend.m */; };
+		0B6ED7CE1C032013003B90B0 /* UITableViewCell+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7C51C032013003B90B0 /* UITableViewCell+Extend.m */; };
+		0B6ED7D61C032046003B90B0 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7D11C032046003B90B0 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0B6ED7D71C032046003B90B0 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7D41C032046003B90B0 /* MBProgressHUD+Add.m */; };
+		0B6ED7D81C032046003B90B0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B6ED7D51C032046003B90B0 /* MBProgressHUD.bundle */; };
+		0B6ED7DD1C0320DF003B90B0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7DB1C0320DF003B90B0 /* GTMBase64.m */; };
+		0B6ED7E01C04132B003B90B0 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ED7DF1C04132B003B90B0 /* DownLoadViewController.m */; };
+		0B6ED7E91C056E15003B90B0 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 0B6ED7E81C056E15003B90B0 /* Images */; };
+		0B7385E51BDF2506002E91F5 /* WebBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7385E41BDF2506002E91F5 /* WebBottomView.m */; };
+		0B7385E81BDF2AA4002E91F5 /* CacheStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7385E71BDF2AA4002E91F5 /* CacheStore.m */; };
+		88896FA612C3A1B9F7A8469C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA80A81EA1B7973BC9208823 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B2880841BDBBB9E00782772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B2880621BDBBB9D00782772 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B2880691BDBBB9D00782772;
+			remoteInfo = GIS_DEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B28806A1BDBBB9D00782772 /* GIS_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIS_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B28806E1BDBBB9D00782772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B28806F1BDBBB9D00782772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B2880711BDBBB9D00782772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0B2880721BDBBB9D00782772 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0B2880741BDBBB9E00782772 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0B2880751BDBBB9E00782772 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0B28807A1BDBBB9E00782772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0B2880831BDBBB9E00782772 /* GIS_DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIS_DEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2880881BDBBB9E00782772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2880891BDBBB9E00782772 /* GIS_DEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIS_DEMOTests.m; sourceTree = "<group>"; };
+		0B2880931BDBBC3900782772 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		0B2880941BDBBC3900782772 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		0B2880951BDBBC3900782772 /* MainWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWebViewController.h; sourceTree = "<group>"; };
+		0B2880961BDBBC3900782772 /* MainWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWebViewController.m; sourceTree = "<group>"; };
+		0B2880981BDBBC3900782772 /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapData.h; sourceTree = "<group>"; };
+		0B2880991BDBBC3900782772 /* MapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapData.m; sourceTree = "<group>"; };
+		0B28809A1BDBBC3900782772 /* MapDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDataViewController.h; sourceTree = "<group>"; };
+		0B28809B1BDBBC3900782772 /* MapDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDataViewController.m; sourceTree = "<group>"; };
+		0B28809D1BDBBC3900782772 /* PublicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
+		0B2880A51BDBCA6900782772 /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		0B2880A61BDBCA6900782772 /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		0B2880A81BDBCD4400782772 /* UINavigationBar+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extend.h"; sourceTree = "<group>"; };
+		0B2880A91BDBCD4400782772 /* UINavigationBar+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extend.m"; sourceTree = "<group>"; };
+		0B2880AB1BDCFC2300782772 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		0B2880AC1BDCFC2300782772 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		0B2880AE1BDD004600782772 /* PersonalInfoAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInfoAvatarCell.h; sourceTree = "<group>"; };
+		0B2880AF1BDD004600782772 /* PersonalInfoAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoAvatarCell.m; sourceTree = "<group>"; };
+		0B2880B11BDD022D00782772 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0B6ED7981C02B980003B90B0 /* mainmap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = mainmap.zip; sourceTree = "<group>"; };
+		0B6ED79A1C02B9BD003B90B0 /* ZipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipManager.h; sourceTree = "<group>"; };
+		0B6ED79B1C02B9BD003B90B0 /* ZipManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipManager.mm; sourceTree = "<group>"; };
+		0B6ED79D1C02F612003B90B0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0B6ED7AD1C031DFF003B90B0 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		0B6ED7AE1C031DFF003B90B0 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		0B6ED7AF1C031DFF003B90B0 /* WishProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishProtocol.h; sourceTree = "<group>"; };
+		0B6ED7B01C031DFF003B90B0 /* WishProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishProtocol.m; sourceTree = "<group>"; };
+		0B6ED7B61C032013003B90B0 /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7B71C032013003B90B0 /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7B81C032013003B90B0 /* TapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapDetectingImageView.h; sourceTree = "<group>"; };
+		0B6ED7B91C032013003B90B0 /* TapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapDetectingImageView.m; sourceTree = "<group>"; };
+		0B6ED7BA1C032013003B90B0 /* UIAttributeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAttributeItem.h; sourceTree = "<group>"; };
+		0B6ED7BB1C032013003B90B0 /* UIAttributeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAttributeItem.m; sourceTree = "<group>"; };
+		0B6ED7BC1C032013003B90B0 /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7BD1C032013003B90B0 /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7BE1C032013003B90B0 /* UIFont+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7BF1C032013003B90B0 /* UIFont+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7C01C032013003B90B0 /* UILabel+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7C11C032013003B90B0 /* UILabel+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7C21C032013003B90B0 /* UINavigationBar+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7C31C032013003B90B0 /* UINavigationBar+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7C41C032013003B90B0 /* UITableViewCell+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extend.h"; sourceTree = "<group>"; };
+		0B6ED7C51C032013003B90B0 /* UITableViewCell+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extend.m"; sourceTree = "<group>"; };
+		0B6ED7D01C032046003B90B0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		0B6ED7D11C032046003B90B0 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0B6ED7D31C032046003B90B0 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		0B6ED7D41C032046003B90B0 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		0B6ED7D51C032046003B90B0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		0B6ED7DA1C0320DF003B90B0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0B6ED7DB1C0320DF003B90B0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0B6ED7DC1C0320DF003B90B0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0B6ED7DE1C04132B003B90B0 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		0B6ED7DF1C04132B003B90B0 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		0B6ED7E81C056E15003B90B0 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		0B7385E31BDF2506002E91F5 /* WebBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBottomView.h; sourceTree = "<group>"; };
+		0B7385E41BDF2506002E91F5 /* WebBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBottomView.m; sourceTree = "<group>"; };
+		0B7385E61BDF2AA4002E91F5 /* CacheStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheStore.h; sourceTree = "<group>"; };
+		0B7385E71BDF2AA4002E91F5 /* CacheStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheStore.m; sourceTree = "<group>"; };
+		AA80A81EA1B7973BC9208823 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA80545BB53451F2BDC319C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C6BCBEE5379312D3E7BA6439 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B2880671BDBBB9D00782772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6ED79E1C02F612003B90B0 /* libz.dylib in Frameworks */,
+				88896FA612C3A1B9F7A8469C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2880801BDBBB9E00782772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B2880611BDBBB9D00782772 = {
+			isa = PBXGroup;
+			children = (
+				0B28806C1BDBBB9D00782772 /* GIS_DEMO */,
+				0B2880861BDBBB9E00782772 /* GIS_DEMOTests */,
+				0B28806B1BDBBB9D00782772 /* Products */,
+				A5F374B230404E37ED69018A /* Pods */,
+				F10586DD246F8FF37D76B134 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B28806B1BDBBB9D00782772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B28806A1BDBBB9D00782772 /* GIS_DEMO.app */,
+				0B2880831BDBBB9E00782772 /* GIS_DEMOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B28806C1BDBBB9D00782772 /* GIS_DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				0B28809D1BDBBC3900782772 /* PublicHeader.h */,
+				0B2880B11BDD022D00782772 /* PrefixHeader.pch */,
+				0B6ED7981C02B980003B90B0 /* mainmap.zip */,
+				0B6ED7AC1C031DFF003B90B0 /* Network */,
+				0B7385E01BDF1DA2002E91F5 /* View */,
+				0B7385DF1BDF1D8C002E91F5 /* Controller */,
+				0B7385E11BDF1DAE002E91F5 /* Model */,
+				0B6ED7B31C032013003B90B0 /* Extend */,
+				0B7385E21BDF1DB6002E91F5 /* Tool */,
+				0B2880711BDBBB9D00782772 /* AppDelegate.h */,
+				0B2880721BDBBB9D00782772 /* AppDelegate.m */,
+				0B2880741BDBBB9E00782772 /* ViewController.h */,
+				0B2880751BDBBB9E00782772 /* ViewController.m */,
+				0B6ED7E81C056E15003B90B0 /* Images */,
+				0B28807A1BDBBB9E00782772 /* Images.xcassets */,
+				0B28806D1BDBBB9D00782772 /* Supporting Files */,
+			);
+			path = GIS_DEMO;
+			sourceTree = "<group>";
+		};
+		0B28806D1BDBBB9D00782772 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B28806E1BDBBB9D00782772 /* Info.plist */,
+				0B28806F1BDBBB9D00782772 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B2880861BDBBB9E00782772 /* GIS_DEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B2880891BDBBB9E00782772 /* GIS_DEMOTests.m */,
+				0B2880871BDBBB9E00782772 /* Supporting Files */,
+			);
+			path = GIS_DEMOTests;
+			sourceTree = "<group>";
+		};
+		0B2880871BDBBB9E00782772 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B2880881BDBBB9E00782772 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B6ED7AC1C031DFF003B90B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED7AD1C031DFF003B90B0 /* HttpClient.h */,
+				0B6ED7AE1C031DFF003B90B0 /* HttpClient.m */,
+				0B6ED7AF1C031DFF003B90B0 /* WishProtocol.h */,
+				0B6ED7B01C031DFF003B90B0 /* WishProtocol.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B6ED7B31C032013003B90B0 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED7D91C0320DF003B90B0 /* Base64 */,
+				0B6ED7CF1C032046003B90B0 /* JSONKit */,
+				0B6ED7D21C032046003B90B0 /* MBProgressHUD */,
+				0B6ED7B61C032013003B90B0 /* NSString+Extend.h */,
+				0B6ED7B71C032013003B90B0 /* NSString+Extend.m */,
+				0B6ED7B81C032013003B90B0 /* TapDetectingImageView.h */,
+				0B6ED7B91C032013003B90B0 /* TapDetectingImageView.m */,
+				0B6ED7BA1C032013003B90B0 /* UIAttributeItem.h */,
+				0B6ED7BB1C032013003B90B0 /* UIAttributeItem.m */,
+				0B6ED7BC1C032013003B90B0 /* UIColor+Extend.h */,
+				0B6ED7BD1C032013003B90B0 /* UIColor+Extend.m */,
+				0B6ED7BE1C032013003B90B0 /* UIFont+Extend.h */,
+				0B6ED7BF1C032013003B90B0 /* UIFont+Extend.m */,
+				0B6ED7C01C032013003B90B0 /* UILabel+Extend.h */,
+				0B6ED7C11C032013003B90B0 /* UILabel+Extend.m */,
+				0B6ED7C21C032013003B90B0 /* UINavigationBar+Extend.h */,
+				0B6ED7C31C032013003B90B0 /* UINavigationBar+Extend.m */,
+				0B6ED7C41C032013003B90B0 /* UITableViewCell+Extend.h */,
+				0B6ED7C51C032013003B90B0 /* UITableViewCell+Extend.m */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		0B6ED7CF1C032046003B90B0 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED7D01C032046003B90B0 /* JSONKit.h */,
+				0B6ED7D11C032046003B90B0 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		0B6ED7D21C032046003B90B0 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED7D31C032046003B90B0 /* MBProgressHUD+Add.h */,
+				0B6ED7D41C032046003B90B0 /* MBProgressHUD+Add.m */,
+				0B6ED7D51C032046003B90B0 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		0B6ED7D91C0320DF003B90B0 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED7DA1C0320DF003B90B0 /* GTMBase64.h */,
+				0B6ED7DB1C0320DF003B90B0 /* GTMBase64.m */,
+				0B6ED7DC1C0320DF003B90B0 /* GTMDefines.h */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		0B7385DF1BDF1D8C002E91F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B2880951BDBBC3900782772 /* MainWebViewController.h */,
+				0B2880961BDBBC3900782772 /* MainWebViewController.m */,
+				0B2880AB1BDCFC2300782772 /* UserInfoViewController.h */,
+				0B2880AC1BDCFC2300782772 /* UserInfoViewController.m */,
+				0B28809A1BDBBC3900782772 /* MapDataViewController.h */,
+				0B28809B1BDBBC3900782772 /* MapDataViewController.m */,
+				0B6ED7DE1C04132B003B90B0 /* DownLoadViewController.h */,
+				0B6ED7DF1C04132B003B90B0 /* DownLoadViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0B7385E01BDF1DA2002E91F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B2880AE1BDD004600782772 /* PersonalInfoAvatarCell.h */,
+				0B2880AF1BDD004600782772 /* PersonalInfoAvatarCell.m */,
+				0B7385E31BDF2506002E91F5 /* WebBottomView.h */,
+				0B7385E41BDF2506002E91F5 /* WebBottomView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0B7385E11BDF1DAE002E91F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B7385E61BDF2AA4002E91F5 /* CacheStore.h */,
+				0B7385E71BDF2AA4002E91F5 /* CacheStore.m */,
+				0B2880981BDBBC3900782772 /* MapData.h */,
+				0B2880991BDBBC3900782772 /* MapData.m */,
+				0B2880931BDBBC3900782772 /* DataManager.h */,
+				0B2880941BDBBC3900782772 /* DataManager.m */,
+				0B6ED79A1C02B9BD003B90B0 /* ZipManager.h */,
+				0B6ED79B1C02B9BD003B90B0 /* ZipManager.mm */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0B7385E21BDF1DB6002E91F5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0B2880A81BDBCD4400782772 /* UINavigationBar+Extend.h */,
+				0B2880A91BDBCD4400782772 /* UINavigationBar+Extend.m */,
+				0B2880A51BDBCA6900782772 /* UIColor+Extend.h */,
+				0B2880A61BDBCA6900782772 /* UIColor+Extend.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		A5F374B230404E37ED69018A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA80545BB53451F2BDC319C0 /* Pods.debug.xcconfig */,
+				C6BCBEE5379312D3E7BA6439 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F10586DD246F8FF37D76B134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B6ED79D1C02F612003B90B0 /* libz.dylib */,
+				AA80A81EA1B7973BC9208823 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B2880691BDBBB9D00782772 /* GIS_DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B28808D1BDBBB9E00782772 /* Build configuration list for PBXNativeTarget "GIS_DEMO" */;
+			buildPhases = (
+				6175D35D911325BD9C896316 /* Check Pods Manifest.lock */,
+				0B2880661BDBBB9D00782772 /* Sources */,
+				0B2880671BDBBB9D00782772 /* Frameworks */,
+				0B2880681BDBBB9D00782772 /* Resources */,
+				2B205686CF1FB015E5FFD46B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIS_DEMO;
+			productName = GIS_DEMO;
+			productReference = 0B28806A1BDBBB9D00782772 /* GIS_DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B2880821BDBBB9E00782772 /* GIS_DEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2880901BDBBB9E00782772 /* Build configuration list for PBXNativeTarget "GIS_DEMOTests" */;
+			buildPhases = (
+				0B28807F1BDBBB9E00782772 /* Sources */,
+				0B2880801BDBBB9E00782772 /* Frameworks */,
+				0B2880811BDBBB9E00782772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B2880851BDBBB9E00782772 /* PBXTargetDependency */,
+			);
+			name = GIS_DEMOTests;
+			productName = GIS_DEMOTests;
+			productReference = 0B2880831BDBBB9E00782772 /* GIS_DEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B2880621BDBBB9D00782772 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = lost;
+				TargetAttributes = {
+					0B2880691BDBBB9D00782772 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					0B2880821BDBBB9E00782772 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0B2880691BDBBB9D00782772;
+					};
+				};
+			};
+			buildConfigurationList = 0B2880651BDBBB9D00782772 /* Build configuration list for PBXProject "GIS_DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B2880611BDBBB9D00782772;
+			productRefGroup = 0B28806B1BDBBB9D00782772 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B2880691BDBBB9D00782772 /* GIS_DEMO */,
+				0B2880821BDBBB9E00782772 /* GIS_DEMOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B2880681BDBBB9D00782772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6ED7E91C056E15003B90B0 /* Images in Resources */,
+				0B6ED7D81C032046003B90B0 /* MBProgressHUD.bundle in Resources */,
+				0B28807B1BDBBB9E00782772 /* Images.xcassets in Resources */,
+				0B6ED7991C02B980003B90B0 /* mainmap.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2880811BDBBB9E00782772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B205686CF1FB015E5FFD46B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6175D35D911325BD9C896316 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B2880661BDBBB9D00782772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2880761BDBBB9E00782772 /* ViewController.m in Sources */,
+				0B28809E1BDBBC3900782772 /* DataManager.m in Sources */,
+				0B2880B01BDD004600782772 /* PersonalInfoAvatarCell.m in Sources */,
+				0B2880731BDBBB9D00782772 /* AppDelegate.m in Sources */,
+				0B6ED7CA1C032013003B90B0 /* UIColor+Extend.m in Sources */,
+				0B2880AA1BDBCD4400782772 /* UINavigationBar+Extend.m in Sources */,
+				0B6ED7D61C032046003B90B0 /* JSONKit.m in Sources */,
+				0B6ED7C91C032013003B90B0 /* UIAttributeItem.m in Sources */,
+				0B2880A71BDBCA6900782772 /* UIColor+Extend.m in Sources */,
+				0B6ED7C81C032013003B90B0 /* TapDetectingImageView.m in Sources */,
+				0B6ED7CD1C032013003B90B0 /* UINavigationBar+Extend.m in Sources */,
+				0B6ED7CE1C032013003B90B0 /* UITableViewCell+Extend.m in Sources */,
+				0B6ED7B21C031DFF003B90B0 /* WishProtocol.m in Sources */,
+				0B2880AD1BDCFC2300782772 /* UserInfoViewController.m in Sources */,
+				0B6ED7E01C04132B003B90B0 /* DownLoadViewController.m in Sources */,
+				0B2880701BDBBB9D00782772 /* main.m in Sources */,
+				0B7385E51BDF2506002E91F5 /* WebBottomView.m in Sources */,
+				0B6ED7C71C032013003B90B0 /* NSString+Extend.m in Sources */,
+				0B6ED7CC1C032013003B90B0 /* UILabel+Extend.m in Sources */,
+				0B2880A11BDBBC3900782772 /* MapData.m in Sources */,
+				0B6ED7CB1C032013003B90B0 /* UIFont+Extend.m in Sources */,
+				0B2880A21BDBBC3900782772 /* MapDataViewController.m in Sources */,
+				0B6ED7D71C032046003B90B0 /* MBProgressHUD+Add.m in Sources */,
+				0B7385E81BDF2AA4002E91F5 /* CacheStore.m in Sources */,
+				0B6ED7B11C031DFF003B90B0 /* HttpClient.m in Sources */,
+				0B28809F1BDBBC3900782772 /* MainWebViewController.m in Sources */,
+				0B6ED79C1C02B9BD003B90B0 /* ZipManager.mm in Sources */,
+				0B6ED7DD1C0320DF003B90B0 /* GTMBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B28807F1BDBBB9E00782772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B28808A1BDBBB9E00782772 /* GIS_DEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B2880851BDBBB9E00782772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B2880691BDBBB9D00782772 /* GIS_DEMO */;
+			targetProxy = 0B2880841BDBBB9E00782772 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B28808B1BDBBB9E00782772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B28808C1BDBBB9E00782772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B28808E1BDBBB9E00782772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA80545BB53451F2BDC319C0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GIS_DEMO/PrefixHeader.pch";
+				INFOPLIST_FILE = GIS_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0B28808F1BDBBB9E00782772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BCBEE5379312D3E7BA6439 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GIS_DEMO/PrefixHeader.pch";
+				INFOPLIST_FILE = GIS_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0B2880911BDBBB9E00782772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GIS_DEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIS_DEMO.app/GIS_DEMO";
+			};
+			name = Debug;
+		};
+		0B2880921BDBBB9E00782772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GIS_DEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIS_DEMO.app/GIS_DEMO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B2880651BDBBB9D00782772 /* Build configuration list for PBXProject "GIS_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B28808B1BDBBB9E00782772 /* Debug */,
+				0B28808C1BDBBB9E00782772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B28808D1BDBBB9E00782772 /* Build configuration list for PBXNativeTarget "GIS_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B28808E1BDBBB9E00782772 /* Debug */,
+				0B28808F1BDBBB9E00782772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B2880901BDBBB9E00782772 /* Build configuration list for PBXNativeTarget "GIS_DEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2880911BDBBB9E00782772 /* Debug */,
+				0B2880921BDBBB9E00782772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B2880621BDBBB9D00782772 /* Project object */;
+}

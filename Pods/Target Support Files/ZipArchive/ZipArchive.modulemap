@@ -1,0 +1,6 @@
+module ZipArchive {
+  umbrella header "ZipArchive-umbrella.h"
+
+  export *
+  module * { export * }
+}
